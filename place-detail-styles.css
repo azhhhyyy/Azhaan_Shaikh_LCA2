@@ -1,0 +1,54 @@
+/* Sticky Visit Button */
+.sticky-visit-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    padding: 16px;
+    border-top: 1px solid #dfdfdf;
+    z-index: 1000;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-visit-btn .visit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    background-color: #f04f24;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.sticky-visit-btn .visit-btn:hover {
+    background-color: #e03e1a;
+}
+
+.sticky-visit-btn .visit-btn i {
+    font-size: 18px;
+}
+
+/* Add padding to content to account for sticky button */
+.content-card {
+    padding-bottom: 80px;
+}
+
+.save-btn {
+    transition: background 0.2s, color 0.2s;
+}
+.save-btn.active {
+    background: #f04f24;
+    color: #fff;
+}
+.save-btn.active i {
+    color: #fff;
+} 

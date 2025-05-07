@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - In & Around</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profile-styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Profile Header -->
+    <section class="profile-header">
+    <nav class="profile-header-nav">
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <h1 class="profile-header-title">Profile</h1>
+    </nav>
+</section>
+
+    <main class="profile-container">
+        <!-- User Profile Section -->
+        <section class="profile-card">
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    <img src="https://placehold.co/150x150" alt="User Avatar" class="avatar-img" id="profile-avatar-img">
+                    <input type="file" id="avatar-upload" accept="image/*" class="avatar-upload-input">
+                    <button class="edit-avatar-btn" id="edit-avatar-btn">
+                        <i class="fas fa-camera"></i>
+                    </button>
+                </div>
+                <div class="profile-info">
+                    <h2 class="profile-name" id="user-name">Loading...</h2>
+                    <p class="profile-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Pune, Maharashtra
+                    </p>
+                    <p class="profile-bio">Travel enthusiast and history lover. Always looking for new places to explore!</p>
+                </div>
+            </div>
+            <div class="profile-stats">
+                <div class="stat-item">
+                    <span class="stat-value">42</span>
+                    <span class="stat-label">Places Visited</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">18</span>
+                    <span class="stat-label">Reviews</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">24</span>
+                    <span class="stat-label">Wishlisted</span>
+                </div>
+            </div>
+            <button class="edit-profile-btn">
+                <i class="fas fa-edit"></i>
+                Edit Profile
+            </button>
+        </section>
+
+        <!-- Tabs Navigation -->
+        <div class="tabs-container">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="visited">Visited</button>
+                <button class="tab-btn" data-tab="wishlist">Wishlist</button>
+                <button class="tab-btn" data-tab="reviews">Reviews</button>
+                <button class="tab-btn" data-tab="photos">Photos</button>
+            </div>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content-container">
+            <!-- Visited Places Tab -->
+            <div class="tab-content active" id="visited-content">
+                <div class="place-grid">
+                    <a href="place-detail.html" class="place-card-link">
+                        <div class="place-card">
+                            <div class="place-img-container">
+                                <img src="https://placehold.co/180x150" alt="Shaniwar Wada" class="place-img">
+                                <div class="place-rating"><span class="star">★</span> 4.5</div>
+                            </div>
+                            <div class="place-info">
+                                <h3 class="place-title">Shaniwar Wada</h3>
+                                <div class="place-location"><span>📍</span> Shaniwar Peth</div>
+                                <div class="place-visited">Visited on May 15, 2023</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="place-detail.html" class="place-card-link">
+                        <div class="place-card">
+                            <div class="place-img-container">
+                                <img src="https://placehold.co/180x150" alt="Lal Mahal" class="place-img">
+                                <div class="place-rating"><span class="star">★</span> 4.3</div>
+                            </div>
+                            <div class="place-info">
+                                <h3 class="place-title">Lal Mahal</h3>
+                                <div class="place-location"><span>📍</span> Kasba Peth</div>
+                                <div class="place-visited">Visited on April 22, 2023</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="place-detail.html" class="place-card-link">
+                        <div class="place-card">
+                            <div class="place-img-container">
+                                <img src="https://placehold.co/180x150" alt="Dagdusheth Mandir" class="place-img">
+                                <div class="place-rating"><span class="star">★</span> 4.6</div>
+                            </div>
+                            <div class="place-info">
+                                <h3 class="place-title">Dagdusheth Mandir</h3>
+                                <div class="place-location"><span>📍</span> Shaniwar Peth</div>
+                                <div class="place-visited">Visited on March 10, 2023</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="place-detail.html" class="place-card-link">
+                        <div class="place-card">
+                            <div class="place-img-container">
+                                <img src="https://placehold.co/180x150" alt="Vaishali Restaurant" class="place-img">
+                                <div class="place-rating"><span class="star">★</span> 4.8</div>
+                            </div>
+                            <div class="place-info">
+                                <h3 class="place-title">Vaishali Restaurant</h3>
+                                <div class="place-location"><span>📍</span> FC Road</div>
+                                <div class="place-visited">Visited on February 28, 2023</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <button class="load-more-btn">Load More</button>
+            </div>
+
+            <!-- Wishlist Tab -->
+            <div class="tab-content" id="wishlist-content">
+                <div class="place-grid">
+                    <a href="place-detail.html" class="place-card-link">
+                        <div class="place-card">
+                            <div class="place-img-container">
+                                <img src="https://placehold.co/180x150" alt="Peshwa Museum" class="place-img">
+                                <div class="place-rating"><span class="star">★</span> 4.2</div>
+                                <button class="wishlist-btn active" onclick="event.preventDefault(); event.stopPropagation();">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="place-info">
+                                <h3 class="place-title">Peshwa Museum</h3>
+                                <div class="place-location"><span>📍</span> Parvati Hills</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="place-detail.html" class="place-card-link">
+                        <div class="place-card">
+                            <div class="place-img-container">
+                                <img src="https://placehold.co/180x150" alt="Sinhagad Fort" class="place-img">
+                                <div class="place-rating"><span class="star">★</span> 4.7</div>
+                                <button class="wishlist-btn active" onclick="event.preventDefault(); event.stopPropagation();">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="place-info">
+                                <h3 class="place-title">Sinhagad Fort</h3>
+                                <div class="place-location"><span>📍</span> Sinhagad Road</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="place-detail.html" class="place-card-link">
+                        <div class="place-card">
+                            <div class="place-img-container">
+                                <img src="https://placehold.co/180x150" alt="Aga Khan Palace" class="place-img">
+                                <div class="place-rating"><span class="star">★</span> 4.5</div>
+                                <button class="wishlist-btn active" onclick="event.preventDefault(); event.stopPropagation();">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="place-info">
+                                <h3 class="place-title">Aga Khan Palace</h3>
+                                <div class="place-location"><span>📍</span> Nagar Road</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Reviews Tab -->
+            <div class="tab-content" id="reviews-content">
+                <div class="review-list">
+                    <div class="review-item">
+                        <div class="review-place">
+                            <img src="https://placehold.co/60x60" alt="Shaniwar Wada" class="review-place-img">
+                            <div class="review-place-info">
+                                <h3 class="review-place-title">Shaniwar Wada</h3>
+                                <div class="review-rating">
+                                    <i class="fas fa-star star-filled"></i>
+                                    <i class="fas fa-star star-filled"></i>
+                                    <i class="fas fa-star star-filled"></i>
+                                    <i class="fas fa-star star-filled"></i>
+                                    <i class="fas fa-star star-filled"></i>
+                                    <span class="review-date">• May 16, 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            Amazing historical place! The architecture is impressive and the history behind it is fascinating. Definitely worth a visit if you're in Pune.
+                        </p>
+                        <div class="review-actions">
+                            <button class="review-action-btn">
+                                <i class="fas fa-edit"></i> Edit
+                            </button>
+                            <button class="review-action-btn">
+                                <i class="fas fa-trash"></i> Delete
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="review-item">
+                        <div class="review-place">
+                            <img src="https://placehold.co/60x60" alt="Vaishali Restaurant" class="review-place-img">
+                            <div class="review-place-info">
+                                <h3 class="review-place-title">Vaishali Restaurant</h3>
+                                <div class="review-rating">
+                                    <i class="fas fa-star star-filled"></i>
+                                    <i class="fas fa-star star-filled"></i>
+                                    <i class="fas fa-star star-filled"></i>
+                                    <i class="fas fa-star star-filled"></i>
+                                    <i class="fas fa-star-half-alt star-half"></i>
+                                    <span class="review-date">• March 2, 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            Great food and ambiance. The South Indian dishes are authentic and delicious. Service is quick and staff is friendly. Highly recommended!
+                        </p>
+                        <div class="review-actions">
+                            <button class="review-action-btn">
+                                <i class="fas fa-edit"></i> Edit
+                            </button>
+                            <button class="review-action-btn">
+                                <i class="fas fa-trash"></i> Delete
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photos Tab -->
+            <div class="tab-content" id="photos-content">
+                <div class="photos-grid">
+                    <div class="photo-item">
+                        <img src="https://placehold.co/200x200" alt="Photo 1" class="user-photo">
+                        <div class="photo-overlay">
+                            <div class="photo-place">Shaniwar Wada</div>
+                        </div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="https://placehold.co/200x200" alt="Photo 2" class="user-photo">
+                        <div class="photo-overlay">
+                            <div class="photo-place">Lal Mahal</div>
+                        </div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="https://placehold.co/200x200" alt="Photo 3" class="user-photo">
+                        <div class="photo-overlay">
+                            <div class="photo-place">Dagdusheth Mandir</div>
+                        </div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="https://placehold.co/200x200" alt="Photo 4" class="user-photo">
+                        <div class="photo-overlay">
+                            <div class="photo-place">Vaishali Restaurant</div>
+                        </div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="https://placehold.co/200x200" alt="Photo 5" class="user-photo">
+                        <div class="photo-overlay">
+                            <div class="photo-place">Sinhagad Fort</div>
+                        </div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="https://placehold.co/200x200" alt="Photo 6" class="user-photo">
+                        <div class="photo-overlay">
+                            <div class="photo-place">Aga Khan Palace</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="profile.js"></script>
+</body>
+</html>

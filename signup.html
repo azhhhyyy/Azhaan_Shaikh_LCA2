@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - In & Around</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth-styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="icon-btn" aria-label="Go back">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <div class="logo">
+            <img src="logoicon.svg" alt="In & Around Logo" class="logo-img">
+        </div>
+        <div class="icon-btn-placeholder"></div>
+    </header>
+
+    <main class="auth-container">
+        <div class="auth-header">
+            <h2 class="auth-title">Create Account</h2>
+            <p class="auth-subtitle">Join In & Around to discover amazing places</p>
+        </div>
+
+        <form id="signup-form" class="auth-form">
+            <!-- Step 1: Personal Information -->
+            <div id="step1" class="form-step active">
+                <div class="form-group">
+                    <label for="fullname" class="form-label">Full Name</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-user input-icon"></i>
+                        <input type="text" id="fullname" class="form-input" name="fullname" placeholder="Enter your full name" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope input-icon"></i>
+                        <input type="email" id="email" class="form-input" name="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-phone input-icon"></i>
+                        <input type="tel" id="phone" class="form-input" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                </div>
+                
+                <button type="button" class="auth-btn next-step">Continue</button>
+            </div>
+
+            <!-- Step 2: Password and Terms -->
+            <div id="step2" class="form-step">
+                <div class="contact-info-review">
+                    <p>We'll send a verification code to:</p>
+                    <div class="contact-info">
+                        <span id="review-email"></span>
+                        <span id="review-phone"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input type="password" id="password" class="form-input" name="password" placeholder="Create a password" required>
+                        <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password" class="form-label">Confirm Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock input-icon"></i>
+                        <input type="password" id="confirm-password" class="form-input" name="confirm-password" placeholder="Confirm your password" required>
+                        <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="form-options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="terms" class="remember-checkbox" required>
+                        <label for="terms" class="remember-label">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                    </div>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="button" class="auth-btn back-step">Back</button>
+                    <button type="submit" class="auth-btn">Sign Up</button>
+                </div>
+            </div>
+        </form>
+        
+        <div class="social-login">
+            <p class="social-login-text">Or sign up with</p>
+            <div class="social-buttons">
+                <button class="social-btn google-btn">
+                    <i class="fab fa-google"></i>
+                    <span>Google</span>
+                </button>
+                <button class="social-btn facebook-btn">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="auth-prompt">
+            <p>Already have an account? <a href="login.html" class="auth-link">Log in</a></p>
+        </div>
+    </main>
+
+    <script src="signup.js"></script>
+</body>
+</html> 

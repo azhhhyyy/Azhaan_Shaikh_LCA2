@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In & Around</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" >
+        <button id="menu-btn" class="icon-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="logo">
+            <img src="logoicon.svg" alt="In & Around Logo" class="logo-img">
+        </div>
+        <button id="profile-btn" class="icon-btn">
+            <i class="fas fa-user"></i>
+        </button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" style="padding-top: 80px;">
+        <!-- Sticky Search Bar -->
+        <div class="sticky-search">
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Search by name, area or category..." class="search-input">
+            </div>
+        </div>
+
+        <!-- Featured Section -->
+        <section class="section" style="padding-top: 10px;">
+            <div class="section-header">
+                <h2 class="section-title">Featured</h2>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="featured-carousel">
+                <div class="featured-cards">
+                    <div class="featured-card">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/61/54/bd/outside.jpg?w=900&h=500&s=1" alt="Dorabjee & Sons Restaurant" class="featured-img">
+                        <div class="featured-info">
+                            <h3 class="featured-title">Dorabjee & Sons</h3>
+                            <div class="featured-subtitle">Restaurant</div>
+                        </div>
+                    </div>
+                    <div class="featured-card">
+                        <img src="https://www.adotrip.com/public/images/areas/master_images/5c6a5fb858f94-Shaniwar_Wada_Attractions.jpg" alt="Shaniwar Wada" class="featured-img">
+                        <div class="featured-info">
+                            <h3 class="featured-title">Shaniwar Wada</h3>
+                            <div class="featured-subtitle">Historical Fort</div>
+                        </div>
+                    </div>
+                    <div class="featured-card">
+                        <img src="https://thetempleguru.com/wp-content/uploads/2024/12/Dagdusheth-Halwai-Ganpati-Temple.jpg" alt="Dagdusheth Temple" class="featured-img">
+                        <div class="featured-info">
+                            <h3 class="featured-title">Dagdusheth Temple</h3>
+                            <div class="featured-subtitle">Religious Site</div>
+                        </div>
+                    </div>
+                    <div class="featured-card">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/20/61/b0/a5/vaishali-restaurant.jpg?w=900&h=500&s=1" alt="Vaishali Restaurant" class="featured-img">
+                        <div class="featured-info">
+                            <h3 class="featured-title">Vaishali</h3>
+                            <div class="featured-subtitle">Restaurant</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <div class="progress-line"></div>
+                    <span class="indicator active" data-index="0"></span>
+                    <span class="indicator" data-index="1"></span>
+                    <span class="indicator" data-index="2"></span>
+                    <span class="indicator" data-index="3"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Category</h2>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="category-grid">
+                <div class="category-item">
+                    <div class="category-icon">🏰</div>
+                    <span class="category-label">Fort</span>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">🏛️</div>
+                    <span class="category-label">Museum</span>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">🍽️</div>
+                    <span class="category-label">Food</span>
+                </div>
+                <div class="category-item">
+                    <div class="category-icon">⛪</div>
+                    <span class="category-label">Religious</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommended Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Recommended</h2>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="place-grid" style="padding-left: 10px;">
+                <a href="place-detail.html" style="text-decoration:none;color:inherit;">
+                    <div class="index-place-card">
+                        <div class="index-place-img-container">
+                            <img src="https://www.savaari.com/blog/wp-content/uploads/2022/11/Shaniwaarwada_Pune_11zon.jpg" alt="Shaniwar Wada" class="index-place-img">
+                            <div class="index-place-rating"><span class="star">★</span> 4.5</div>
+                        </div>
+                        <div class="index-place-info">
+                            <h3 class="index-place-title">Shaniwar Wada</h3>
+                            <div class="index-place-location"><span>📍</span> Shaniwar Peth</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="place-detail.html" style="text-decoration:none;color:inherit;">
+                    <div class="index-place-card">
+                        <div class="index-place-img-container">
+                            <img src="https://images.indianexpress.com/2024/02/feb-22.jpg?resize=720,405" alt="Lal Mahal" class="index-place-img">
+                            <div class="index-place-rating"><span class="star">★</span> 4.3</div>
+                        </div>
+                        <div class="index-place-info">
+                            <h3 class="index-place-title">Lal Mahal</h3>
+                            <div class="index-place-location"><span>📍</span> Kasba Peth</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="place-detail.html" style="text-decoration:none;color:inherit;">
+                    <div class="index-place-card">
+                        <div class="index-place-img-container">
+                            <img src="https://punetourism.co.in/images/places-to-visit/headers/shreemant-dagdusheth-halwai-ganpati-mandir-pune-tourism-entry-fee-timings-holidays-reviews-header.jpg" alt="Dagdusheth Mandir" class="index-place-img">
+                            <div class="index-place-rating"><span class="star">★</span> 4.6</div>
+                        </div>
+                        <div class="index-place-info">
+                            <h3 class="index-place-title">Dagdusheth Mandir</h3>
+                            <div class="index-place-location"><span>📍</span> Shaniwar Peth</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="place-detail.html" style="text-decoration:none;color:inherit;">
+                    <div class="index-place-card">
+                        <div class="index-place-img-container">
+                            <img src="https://im.whatshot.in/img/2021/Oct/peshwa-cropped-1-1633426767.jpg" alt="Peshwa Museum" class="index-place-img">
+                            <div class="index-place-rating"><span class="star">★</span> 4.2</div>
+                        </div>
+                        <div class="index-place-info">
+                            <h3 class="index-place-title">Peshwa Museum</h3>
+                            <div class="index-place-location"><span>📍</span> Parvati Hills</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="place-detail.html" style="text-decoration:none;color:inherit;">
+                    <div class="index-place-card">
+                        <div class="index-place-img-container">
+                            <img src="https://images.hindustantimes.com/img/2022/05/25/550x309/0e91d476-dc54-11ec-8839-d8f781242971_1653501564149.jpg" alt="Raja Dinkar Kelkar Museum" class="index-place-img">
+                            <div class="index-place-rating"><span class="star">★</span> 4.7</div>
+                        </div>
+                        <div class="index-place-info">
+                            <h3 class="index-place-title">Raja Dinkar Kelkar Museum</h3>
+                            <div class="index-place-location"><span>📍</span> Bajirao Road</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="place-detail.html" style="text-decoration:none;color:inherit;">
+                    <div class="index-place-card">
+                        <div class="index-place-img-container">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Pune_Palace.jpg/1200px-Pune_Palace.jpg" alt="Aga Khan Palace" class="index-place-img">
+                            <div class="index-place-rating"><span class="star">★</span> 4.4</div>
+                        </div>
+                        <div class="index-place-info">
+                            <h3 class="index-place-title">Aga Khan Palace</h3>
+                            <div class="index-place-location"><span>📍</span> Nagar Road</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Nearby Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Nearby</h2>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="place-grid">
+                <a href="place-detail.html" style="text-decoration:none;color:inherit;">
+                    <div class="index-place-card">
+                        <div class="index-place-img-container">
+                            <img src="https://punetourism.co.in/images/places-to-visit/headers/shreemant-dagdusheth-halwai-ganpati-mandir-pune-tourism-entry-fee-timings-holidays-reviews-header.jpg" alt="Dagdusheth Mandir" class="index-place-img">
+                            <div class="index-place-rating"><span class="star">★</span> 4.6</div>
+                        </div>
+                        <div class="index-place-info">
+                            <h3 class="index-place-title">Dagdusheth Mandir</h3>
+                            <div class="index-place-location"><span>📍</span> Shaniwar Peth</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="place-detail.html" style="text-decoration:none;color:inherit;">
+                    <div class="index-place-card">
+                        <div class="index-place-img-container">
+                            <img src="https://im.whatshot.in/img/2021/Oct/peshwa-cropped-1-1633426767.jpg" alt="Peshwa Museum" class="index-place-img">
+                            <div class="index-place-rating"><span class="star">★</span> 4.2</div>
+                        </div>
+                        <div class="index-place-info">
+                            <h3 class="index-place-title">Peshwa Museum</h3>
+                            <div class="index-place-location"><span>📍</span> Parvati Hills</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="place-detail.html" style="text-decoration:none;color:inherit;">
+                    <div class="index-place-card">
+                        <div class="index-place-img-container">
+                            <img src="https://sceneloc8.com/wp-content/uploads/2024/03/Pataleshwar-Cave-Temple-4.png" alt="Pataleshwar Cave Temple" class="index-place-img">
+                            <div class="index-place-rating"><span class="star">★</span> 4.3</div>
+                        </div>
+                        <div class="index-place-info">
+                            <h3 class="index-place-title">Pataleshwar Cave Temple</h3>
+                            <div class="index-place-location"><span>📍</span> Jangli Maharaj Road</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="place-detail.html" style="text-decoration:none;color:inherit;">
+                    <div class="index-place-card">
+                        <div class="index-place-img-container">
+                            <img src="https://i0.wp.com/setyourownscene.com/wp-content/uploads/2023/02/IMG_9880.jpeg?resize=865%2C649&ssl=1" alt="Osho Ashram" class="index-place-img">
+                            <div class="index-place-rating"><span class="star">★</span> 4.5</div>
+                        </div>
+                        <div class="index-place-info">
+                            <h3 class="index-place-title">Osho Ashram</h3>
+                            <div class="index-place-location"><span>📍</span> Koregaon Park</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="place-detail.html" style="text-decoration:none;color:inherit;">
+                    <div class="index-place-card">
+                        <div class="index-place-img-container">
+                            <img src="https://punetourism.co.in/images/places-to-visit/headers/empress-botanical-garden-pune-tourism-entry-fee-timings-holidays-reviews-header.jpg" alt="Empress Garden" class="index-place-img">
+                            <div class="index-place-rating"><span class="star">★</span> 4.4</div>
+                        </div>
+                        <div class="index-place-info">
+                            <h3 class="index-place-title">Empress Garden</h3>
+                            <div class="index-place-location"><span>📍</span> Ghorpadi</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="place-detail.html" style="text-decoration:none;color:inherit;">
+                    <div class="index-place-card">
+                        <div class="index-place-img-container">
+                            <img src="https://punetourism.co.in/images/places-to-visit/headers/sinhagad-fort-pune-tourism-entry-fee-timings-holidays-reviews-header.jpg" alt="Sinhagad Fort" class="index-place-img">
+                            <div class="index-place-rating"><span class="star">★</span> 4.7</div>
+                        </div>
+                        <div class="index-place-info">
+                            <h3 class="index-place-title">Sinhagad Fort</h3>
+                            <div class="index-place-location"><span>📍</span> Sinhagad Road</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Popular Section -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Popular</h2>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="place-grid">
+                <a href="place-detail.html" style="text-decoration:none;color:inherit;">
+                    <div class="index-place-card">
+                        <div class="index-place-img-container">
+                            <img src="https://im.whatshot.in/img/2020/Jan/vaishali-1577955421.jpg?wm=1&w=1200&h=630&cc=1" alt="Vaishali Restaurant" class="index-place-img">
+                            <div class="index-place-rating"><span class="star">★</span> 4.8</div>
+                        </div>
+                        <div class="index-place-info">
+                            <h3 class="index-place-title">Vaishali Restaurant</h3>
+                            <div class="index-place-location"><span>📍</span> FC Road</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="place-detail.html" style="text-decoration:none;color:inherit;">
+                    <div class="index-place-card">
+                        <div class="index-place-img-container">
+                            <img src="https://jugyah-dev-property-photos.s3.ap-south-1.amazonaws.com/large_Screenshot_2024_11_19_114014_c5a233934a.webp" alt="Raigadh Visava" class="index-place-img">
+                            <div class="index-place-rating"><span class="star">★</span> 4.4</div>
+                        </div>
+                        <div class="index-place-info">
+                            <h3 class="index-place-title">Raigadh Visava</h3>
+                            <div class="index-place-location"><span>📍</span> JM Road</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="place-detail.html" style="text-decoration:none;color:inherit;">
+                    <div class="index-place-card">
+                        <div class="index-place-img-container">
+                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/92/a0/01/dorabjee-and-sons.jpg?w=900&h=500&s=1" alt="Dorabjee & Sons" class="index-place-img">
+                            <div class="index-place-rating"><span class="star">★</span> 4.6</div>
+                        </div>
+                        <div class="index-place-info">
+                            <h3 class="index-place-title">Dorabjee & Sons</h3>
+                            <div class="index-place-location"><span>📍</span> Camp</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="place-detail.html" style="text-decoration:none;color:inherit;">
+                    <div class="index-place-card">
+                        <div class="index-place-img-container">
+                            <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/7/2023/09/21160343/kayani-bakery-shrewsbury-biscuits.jpg" alt="Kayani Bakery" class="index-place-img">
+                            <div class="index-place-rating"><span class="star">★</span> 4.5</div>
+                        </div>
+                        <div class="index-place-info">
+                            <h3 class="index-place-title">Kayani Bakery</h3>
+                            <div class="index-place-location"><span>📍</span> East Street</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="place-detail.html" style="text-decoration:none;color:inherit;">
+                    <div class="index-place-card">
+                        <div class="index-place-img-container">
+                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f5/ae/35/outdoor-seating.jpg?w=900&h=500&s=1" alt="German Bakery" class="index-place-img">
+                            <div class="index-place-rating"><span class="star">★</span> 4.3</div>
+                        </div>
+                        <div class="index-place-info">
+                            <h3 class="index-place-title">German Bakery</h3>
+                            <div class="index-place-location"><span>📍</span> Koregaon Park</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="place-detail.html" style="text-decoration:none;color:inherit;">
+                    <div class="index-place-card">
+                        <div class="index-place-img-container">
+                            <img src="https://media.assettype.com/outlooktraveller%2F2024-01%2F6e66c2b2-87d0-4056-a114-82138dbef09a%2Fcafe_good_luck_pune.jpg?rect=0%2C0%2C1080%2C608&w=1024&auto=format%2Ccompress&fit=max" alt="Cafe Goodluck" class="index-place-img">
+                            <div class="index-place-rating"><span class="star">★</span> 4.4</div>
+                        </div>
+                        <div class="index-place-info">
+                            <h3 class="index-place-title">Cafe Goodluck</h3>
+                            <div class="index-place-location"><span>📍</span> Deccan Gymkhana</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sidebar Overlay -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    <!-- Sidebar Menu -->
+    <div id="sidebar-menu" class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <img src="logoicon.svg" alt="In & Around Logo" class="logo-img">
+            </div>
+            <button id="close-menu-btn" class="sidebar-close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <ul class="sidebar-menu-list">
+                <li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link"><i class="fas fa-globe"></i> All</a></li>
+                <li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link"><i class="fas fa-star"></i> Featured</a></li>
+                <li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link"><i class="fas fa-fire"></i> Popular</a></li>
+                <li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link"><i class="fas fa-thumbs-up"></i> Recommended</a></li>
+                <li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link"><i class="fas fa-heart"></i> Wishlisted</a></li>
+                <li class="sidebar-menu-item"><a href="profile.html" class="sidebar-menu-link"><i class="fas fa-user"></i> Profile</a></li>
+                <li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link"><i class="fas fa-question-circle"></i> Help</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-footer">
+            <a href="#" class="sidebar-settings-btn">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </a>
+            <a href="#" class="sidebar-logout-btn" id="logout-btn">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Logout Confirmation Modal -->
+    <div class="logout-modal" id="logoutModal">
+        <div class="logout-modal-content">
+            <h3 class="logout-modal-title">Logout Confirmation</h3>
+            <p class="logout-modal-text">Are you sure you want to logout?</p>
+            <div class="logout-modal-buttons">
+                <button class="logout-modal-btn logout-modal-cancel" id="cancelLogout">Cancel</button>
+                <button class="logout-modal-btn logout-modal-confirm" id="confirmLogout">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const featuredCards = document.querySelector('.featured-cards');
+        const indicators = document.querySelectorAll('.indicator');
+        
+        // Update indicators based on scroll position
+        featuredCards.addEventListener('scroll', () => {
+            const index = Math.round(featuredCards.scrollLeft / featuredCards.offsetWidth);
+            indicators.forEach((indicator, i) => {
+                indicator.classList.toggle('active', i === index);
+            });
+        });
+    });
+
+    // Logout functionality
+    const logoutBtn = document.getElementById('logout-btn');
+    const logoutModal = document.getElementById('logoutModal');
+    const cancelLogout = document.getElementById('cancelLogout');
+    const confirmLogout = document.getElementById('confirmLogout');
+
+    logoutBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        logoutModal.style.display = 'flex';
+    });
+
+    cancelLogout.addEventListener('click', () => {
+        logoutModal.style.display = 'none';
+    });
+
+    confirmLogout.addEventListener('click', () => {
+        window.location.href = 'login.html';
+    });
+
+    // Close modal when clicking outside
+    logoutModal.addEventListener('click', (e) => {
+        if (e.target === logoutModal) {
+            logoutModal.style.display = 'none';
+        }
+    });
+    </script>
+</body>
+</html>

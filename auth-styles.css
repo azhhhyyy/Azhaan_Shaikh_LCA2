@@ -1,0 +1,366 @@
+/* ===== Base Styles ===== */
+:root {
+    --primary: #f04f24;
+    --primary-light: rgba(240, 79, 36, 0.1);
+    --text-primary: #1A1A1A;
+    --text-secondary: #6f7789;
+    --background: #f6f6f6;
+    --card: #ffffff;
+    --border: #dfdfdf;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* ===== Header ===== */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: var(--card);
+    box-shadow: var(--shadow);
+}
+
+.icon-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.icon-btn:hover {
+    background-color: var(--background);
+}
+
+.icon-btn-placeholder {
+    width: 40px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+/* ===== Auth Container ===== */
+.auth-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.auth-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 8px 0;
+}
+
+.auth-subtitle {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* ===== Auth Form ===== */
+.auth-form {
+    background-color: var(--card);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+    margin-bottom: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px var(--primary-light);
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 0;
+}
+
+/* ===== Form Options ===== */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.remember-checkbox {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--primary);
+}
+
+.remember-label {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.remember-label a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.remember-label a:hover {
+    text-decoration: underline;
+}
+
+.forgot-password {
+    font-size: 14px;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* ===== Auth Button ===== */
+.auth-btn {
+    width: 100%;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.auth-btn:hover {
+    background-color: #e03e1a;
+}
+
+/* ===== Social Login ===== */
+.social-login {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.social-login-text {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin: 0 0 16px 0;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--card);
+    color: var(--text-primary);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.social-btn:hover {
+    background-color: var(--background);
+}
+
+.social-btn i {
+    font-size: 16px;
+}
+
+.google-btn i {
+    color: #DB4437;
+}
+
+.facebook-btn i {
+    color: #4267B2;
+}
+
+/* ===== Auth Prompt ===== */
+.auth-prompt {
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.auth-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-link:hover {
+    text-decoration: underline;
+}
+
+/* ===== Form Steps ===== */
+.form-step {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.form-step.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Contact Info Review ===== */
+.contact-info-review {
+    background-color: var(--primary-light);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.contact-info-review p {
+    color: var(--text-secondary);
+    margin: 0 0 8px 0;
+    font-size: 14px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact-info span {
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* ===== Form Buttons ===== */
+.form-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.form-buttons .auth-btn {
+    flex: 1;
+}
+
+.back-step {
+    background-color: var(--background);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+}
+
+.back-step:hover {
+    background-color: var(--border);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 480px) {
+    .auth-container {
+        padding: 16px;
+    }
+    
+    .auth-form {
+        padding: 20px;
+    }
+    
+    .social-buttons {
+        flex-direction: column;
+    }
+    
+    .form-buttons {
+        flex-direction: column;
+    }
+    
+    .contact-info-review {
+        padding: 12px;
+    }
+    
+    .contact-info span {
+        font-size: 14px;
+    }
+} 
